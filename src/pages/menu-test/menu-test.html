@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>Consulta CEP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-item>
+  <ion-label floating>Digite o CEP</ion-label>
+  <ion-input type="text" max=8 name="qrCEP" [(ngModel)]="qrCEP"></ion-input>
+</ion-item>
+
+<br><br><br><br><br><br>
+
+<button ion-button block color="secondary" (click)="buscarCep()">Pesquisar CEP</button>
+<p>Rua: {{logradouro}}</p>
+<p>Bairro: {{bairro}}</p>
+<p>Cidade: {{cidade}}</p>
+<p>UF: {{uf}}</p>
+
+</ion-content>
